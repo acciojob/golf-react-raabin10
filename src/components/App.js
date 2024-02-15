@@ -25,9 +25,8 @@ class App extends Component {
 		}
     }
 
-    // bind ArrowRight keydown eventddsds 
     componentDidMount() {
-   document.addEventListener('key', (event) => {
+   document.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowRight') {
                 this.setState((prevState) => {
                     const newPos = prevState.ballPosition.left
