@@ -25,9 +25,9 @@ class App extends Component {
 		}
     }
 
-    // bind ArrowRight keydown eventmm
+    // bind ArrowRight keydown event
     componentDidMount() {
-   document.addEventListener('keydown', (event) => {
+   document.addEventListener('key', (event) => {
             if (event.key === 'ArrowRight') {
                 this.setState((prevState) => {
                     const newPos = prevState.ballPosition.left
@@ -36,6 +36,7 @@ class App extends Component {
                     return { ballPosition: { left: `${newPos}px` } };
                 });
             }
+            
         });
     
     }
